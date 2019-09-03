@@ -1,0 +1,21 @@
+@Intent('apod', [
+    'View picture of the day',
+    'Show image'
+])
+apod() {
+    apod = getApod()
+
+    if (apod.media_type == 'video') {
+        @Format('buttons', [
+            {
+                title: 'View Video',
+                url: apod.url
+            }
+        ])
+        > { apod.title }
+    }
+    else {
+        @Format('image', apod.url)
+        > { apod.title }
+    }
+}

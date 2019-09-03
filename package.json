@@ -1,0 +1,17 @@
+{
+  "name": "my-chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "newbot": "^0.3.3",
+    "newbot-formats": "^1.4.2",
+    "axios": "*"
+  }
+}

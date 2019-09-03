@@ -1,0 +1,5 @@
+@Event('start')
+start() {
+    @Format('quickReplies', ['View picture of the day'])
+    > Hey ! My name is SpaceBot
+}
